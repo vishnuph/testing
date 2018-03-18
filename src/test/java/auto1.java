@@ -19,6 +19,7 @@ public class auto1 {
 
         @Before
         public void setUp() throws Exception {
+            System.setProperty("webdriver.gecko.driver", "C:/eclipse/firefoxdriver/geckodriver.exe");
             driver = new FirefoxDriver();
             baseUrl = "https://www.flipkart.com/";
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
